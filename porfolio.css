@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Rubik:wght@300&display=swap');
+
+body{
+    background-image: url('../../webs/2021/img/texturas/background-1209772_1920.jpg');
+    background: repeating-linear-gradient(90deg,rgb(32, 23, 37),rgba(6, 24, 185, 0.513),rgb(6, 4, 121));
+    font-family: 'Rubik',sans-serif;
+    font-size: 16px;
+  
+  }
+
+ 
+
+    .descarga{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background:linear-gradient(rgba(128, 128, 128, 0.342),rgba(255, 255, 255, 0.541));
+        /* background-image: url('../../webs/2021/img/texturas/pattern-2490099_1280.png'); */
+        backdrop-filter: blur(2px);
+        transition: .9s clip-path ease-in-out;
+        clip-path: circle(55% at 50% 50%);
+        z-index: 100;   
+       
+       
+    }
+    
+    .total{
+        font-size: 70px;
+        color: #fff;
+        letter-spacing: 4px;
+    }
+    
+    .descarga.hide{
+        clip-path: circle(0% at 50% 0%);
+       
+    }
+
+    /*codigo loader*/
+    .lds-dual-ring {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+      }
+      .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        border-color: #fff transparent #fff transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+
+
+
+
+
+.active{
+    text-decoration: underline wavy rgb(1, 32, 1);
+    text-underline-offset: 9px;
+
+
+}
+
+.nav-link{
+    color: black;
+}
+
+.alto{
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+
+.portfolio-item> img{
+    transition: .5s transform;
+}
+
+.portfolio-item:hover>img{
+    transform: scale(.90);
+}
+
+.fondoClientes{
+    background: linear-gradient(to top left,
+     rgb(216, 216, 195) 20%,
+      rgb(171, 170, 184) 40%,              
+      rgb(158, 161, 160) 50%);
+}
+
+.sec-portafolio-js{
+    background: linear-gradient(75deg,rgba(253, 255, 255, 0.623),rgb(173, 173, 177));
+    background-image: url('../../webs/2021/img/texturas/pattern-2490099_1280.png');
+}
+
+
+.hero{
+    background: linear-gradient(90deg,white 50%,rgba(0, 0, 0, 0.561) 50%);
+    /* filter: blur(1px); */
+    border-top-right-radius:50px;
+    border-bottom-left-radius: 80px;
+}
+
+
+
+.portada{
+    height: 80vh;
+    max-width: 100vw; 
+   
+}
+
+.cicle{
+    overflow: hidden;
+}
+
+
+/*Codigo para texto-circular*/
+.tresd{
+display: flex;
+justify-content: center;
+align-items: center;
+/* background: black;  */
+animation: animacion 9s linear infinite;   
+height: 50vh;
+
+
+}
+
+.tresd::before{
+content: "";
+width: 50px;
+height: 50px;
+background: rgb(234, 234, 243);
+border-radius: 50%;
+position: absolute;
+box-shadow: 0 0 20px rgb(240, 243, 243);
+background-image: url('../../webs/2021/img/texturas/ink-gb85c4835f_1920.jpg'); 
+background-position: center;
+background-size: cover;
+/* background: linear-gradient(to top , rgb(236, 232, 236), rgb(136, 136, 146) 10%, rgb(10, 6, 73),rgba(2, 3, 49, 0.712) ); */
+
+}
+
+
+
+#texto{
+   
+font-size: 2.25rem;
+height: 23.75rem;     
+font-family:  'Chakra Petch',sans-serif;  
+
+
+
+}
+
+
+@keyframes animacion{
+from{
+    transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+}
+}
+
+span{
+position: absolute;
+transform-origin: 0 11.875rem;      
+
+}
+
+
+.text{
+    height: 6.25rem;
+    overflow: hidden;
+}
+
+
+/* copia web para pagina final */
+.portrait{
+    max-width: 75rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cohete{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    bottom: 46%;
+    left: -1.8rem;
+    transform: rotate(130deg);   
+    padding: 5px;
+    animation: fly 3s ease infinite;
+    animation-delay: 4s;
+    border-radius: 50%;
+    /* border-top: 1px solid rgba(255, 0, 0, 0.568);
+    border-left: 1px solid rgb(235, 179, 26); */
+}
+
+.stark{
+  opacity: .8;
+}
+
+@keyframes fly {
+    from{
+        transform: translateX(0) rotate(130deg) ; 
+    }
+
+    to{
+        transform: translateX(1200px) rotate(130deg); 
+        /* box-shadow: 0 0 30px rgb(246, 246, 243); */
+        opacity: .5;
+        
+    }
+    
+}
+
+
+/*CODIGO PARA LAS NUBES*/
+.clouds{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    /* animation: ease-in animat 4s; */
+
+}
+
+@keyframes animat{
+    0%{transform: scale(0);}
+    50%{border-radius: 50%;}
+    100%{transform: scale(1);}
+}
+
+.clouds >img{
+
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(8s * var(--i)) linear infinite;
+}
+
+
+
+@keyframes animate{
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(100%);
+    }
+}
+
+/*aboute*/
+.about{
+    min-height: 100vh;
+    max-width: 68.75rem;
+    background-image: url('../../webs/2021/img/texturas/honeycomb-34984_1280.png');
+    /* background: repeating-linear-gradient(-90deg,rgb(32, 23, 37),rgba(6, 24, 185, 0.513),rgb(6, 4, 121)); */
+}
+
+
+.programas{
+    background: radial-gradient(circle, blue,black);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(232, 230, 233);
+}
+
+.programas .porcent{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #fff;  
+    padding: 5px;
+  
+    
+}
+
+.programas .porcent .size{   
+    width: 90%;
+    height: 30px;
+    border-bottom: 4px solid white;
+    color: #fff;
+    padding: 3px ;
+    border-bottom-right-radius:2px ;
+   
+  
+}
+
+.size-1{
+    width: 95%;
+    height: 30px;
+    border-bottom: 4px solid white;
+    color: #72c712;
+    padding: 3px 0;
+    color: #fff;
+    border-bottom-right-radius:2px ;
+}
+
+.size-2{
+    width: 70%;
+    height: 30px;
+    border-bottom: 4px solid white;
+    color: #72c712;
+    padding: 3px 0;
+    color: #fff;
+    border-bottom-right-radius:2px ;
+}
+
+.size-3{
+    width: 65%;
+    height: 30px;
+    border-bottom: 4px solid white;
+    color: #72c712;
+    padding: 3px 0;
+    color: #fff;
+    border-bottom-right-radius:2px ;
+   
+  
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: blue;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar>img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.fondoCustomers{
+  
+    /* background: url('../../webs/2021/img/abstracto/fabric-gb167894f9_1920.jpg');
+    background-color: rgb(167, 20, 142); */
+    background: linear-gradient(25deg,white,rgb(38, 13, 180));
+    border-radius: 10px;
+  
+    /* background-blend-mode:multiply; */
+}
+
+.form{
+    height: 12.5rem;
+    background: radial-gradient(circle at 60%, blue,black);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(232, 230, 233);
+
+}
+
+.up{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    background: radial-gradient(circle at 60%, blue,black);
+    color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.arrow{
+    font-size: 20px;
+    color: #fff;
+}

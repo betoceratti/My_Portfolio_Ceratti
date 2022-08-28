@@ -1,0 +1,21 @@
+<script src="jquery.js"></script>
+<script src="typed.js"></script>
+<script>
+    $(function(){
+        $(".element").typed({
+            strings: ["First sentence.", "Second sentence."],
+            typeSpeed: 0
+        });
+    });
+</script>
+
+
+
+ <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#roberto">About</a></li> -->
+            <!-- <li class="nav-item"><a href="#secPortafolio" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#secClientes" class="nav-link">Contact</a></li> -->
+
+
+ codigo para la api para qr
+ https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${variable}           
